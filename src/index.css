@@ -94,6 +94,10 @@
   .text-xl {
     font-size: 1.05rem;
   }
+
+  .mt-6 {
+    margin-top: 1rem;
+  }
 }
 
 /* SWEETALERT CSS CUSTOM */

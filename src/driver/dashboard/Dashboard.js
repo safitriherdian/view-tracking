@@ -58,7 +58,7 @@ function Dashboard() {
                             <p className="text-sm text-white">Fill out the form below and create new delivery</p>
                         </div>
 
-                        <div className="py-5 px-10 rounded-b-lg bg-white">
+                        <div className="py-5 px-10 rounded-b-lg bg-white mb-4">
                             <div>
                                 <p className="font-bold mb-2">Kendaraan</p>
                                 <div class="w-fullinline-block relative text-sm">
@@ -113,51 +113,55 @@ function Dashboard() {
                     </div>
 
                     <div className="col-span-1">
-                        <ul
-                            className="flex list-none flex-wrap pb-4 flex-row"
-                            role="tablist"
-                        >
-                            <li className="-mb-px mr-4 last:mr-0 flex-auto text-center">
-                                <a
-                                    className={
-                                        "font-bold uppercase px-5 py-3 shadow-lg rounded-md block leading-normal " +
-                                        (openTab === 1
-                                            ? "text-white bg-pink-1"
-                                            : "text-pink-1 bg-white")
-                                    }
-                                    onClick={e => {
-                                        e.preventDefault();
-                                        setOpenTab(1);
-                                    }}
-                                    data-toggle="tab"
-                                    href="#link1"
-                                    role="tablist"
-                                >
-                                    Rute 1
-                                </a>
-                            </li>
-                            <li className="-mb-px mr-4 last:mr-0 flex-auto text-center">
-                                <a
-                                    className={
-                                        "font-bold uppercase px-5 py-3 shadow-lg rounded-md block leading-normal " +
-                                        (openTab === 2
-                                            ? "text-white bg-pink-1"
-                                            : "text-pink-1 bg-white")
-                                    }
-                                    onClick={e => {
-                                        e.preventDefault();
-                                        setOpenTab(2);
-                                    }}
-                                    data-toggle="tab"
-                                    href="#link2"
-                                    role="tablist"
-                                >
-                                    Rute 2
-                                </a>
-                            </li>
-                        </ul>
+                        <div className="bg-pink-1 py-4 px-10 rounded-t-lg">
 
-                        <div className="py-5 px-10 rounded-md bg-white">
+                            <ul
+                                className="flex list-none flex-wrap flex-row"
+                                role="tablist"
+                            >
+                                <li className="-mb-px mr-4 last:mr-0 flex-auto text-center">
+                                    <a
+                                        className={
+                                            "font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                                            (openTab === 1
+                                                ? "text-pink-1 bg-white"
+                                                : "text-white bg-pink-2")
+
+                                        }
+                                        onClick={e => {
+                                            e.preventDefault();
+                                            setOpenTab(1);
+                                        }}
+                                        data-toggle="tab"
+                                        href="#link1"
+                                        role="tablist"
+                                    >
+                                        Rute 1
+                                    </a>
+                                </li>
+                                <li className="-mb-px mr-4 last:mr-0 flex-auto text-center">
+                                    <a
+                                        className={
+                                            "font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                                            (openTab === 2
+                                                ? "text-pink-1 bg-white"
+                                                : "text-white bg-pink-2")
+                                        }
+                                        onClick={e => {
+                                            e.preventDefault();
+                                            setOpenTab(2);
+                                        }}
+                                        data-toggle="tab"
+                                        href="#link2"
+                                        role="tablist"
+                                    >
+                                        Rute 2
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="py-5 px-10 rounded-md bg-white mb-4">
                             <div className="flex flex-wrap">
                                 <div className="w-full">
 
@@ -166,7 +170,7 @@ function Dashboard() {
                                             <div className="tab-content tab-space">
                                                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                                                     <div>
-                                                        <p className="font-bold mb-2 mt-5">Point Awal - 1</p>
+                                                        <p className="font-bold mb-2">Point Awal - 1</p>
                                                         <div class="w-fullinline-block relative text-sm">
                                                             <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                                                 <option>Pilih point awal</option>
@@ -216,7 +220,7 @@ function Dashboard() {
 
                                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                                                     <div>
-                                                        <p className="font-bold mb-2 mt-5">Point Awal - 2</p>
+                                                        <p className="font-bold mb-2">Point Awal - 2</p>
                                                         <div class="w-fullinline-block relative text-sm">
                                                             <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                                                 <option>Pilih point awal</option>
@@ -272,7 +276,7 @@ function Dashboard() {
 
                         <Link to='/history'>
                             <button onClick={toast_success} type="submit"
-                                class="mt-4 justify-center flex bg-blue-1 hover:bg-blue-2 text-white font-bold py-3 w-full rounded-lg tracking-wider shadow-sm">
+                                class="justify-center flex bg-blue-1 hover:bg-blue-2 text-white font-bold py-3 w-full rounded-lg tracking-wider shadow-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
@@ -287,7 +291,7 @@ function Dashboard() {
 
 
             </div>
-        </div>
+        </div >
     )
 }
 
