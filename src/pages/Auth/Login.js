@@ -1,5 +1,6 @@
 import React from 'react';
 import './Auth.css';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
@@ -13,7 +14,7 @@ function Login() {
             <div class="flex items-center justify-start space-x-3">
               <img className="h-10" src="/images/logo-kosme.png" alt="" />
               <img className="h-10" src="/images/icon.png" alt="" />
-                <a href="#" class="font-extrabold text-2xl text-black">K|TRACK</a>
+              <a href="#" class="font-extrabold text-2xl text-black">K|TRACK</a>
             </div>
             <div class='space-y-5 text-black'>
               <h1 class="lg:text-2xl xl:text-4xl xl:leading-snug font-extrabold">Enter your account and tracking your packages</h1>
@@ -50,15 +51,17 @@ function Login() {
                   class="flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal" />
                 <input type="password" placeholder="Password"
                   class="flex px-3 py-2 md:px-4 md:py-3 border-2 border-black rounded-lg font-medium placeholder:font-normal" />
-                <button class="flex items-center justify-center flex-none px-3 py-2 md:px-4 md:py-3 border-2 rounded-lg font-medium border-black bg-black text-white">LOGIN</button>
+
+                <Link to='/'>
+                  <button class="flex w-full justify-center flex-none px-3 py-2 md:px-4 md:py-3 border-2 rounded-lg font-medium border-black bg-black text-white">LOGIN</button>
+                </Link>
+
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
-    </body>
+    </body >
   )
 }
 

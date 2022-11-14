@@ -25,11 +25,14 @@ import HistoryDetails from './driver/history/HistoryDetails';
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+
       <Routes>
-
         <Route path='/login' element={<Login />} />
+      </Routes>
 
+      <Navbar />
+
+      <Routes>
         {/* ADMIN */}
 
         <Route path='/admin' element={<Dashboard />} />
@@ -38,7 +41,7 @@ function App() {
         <Route path='/admin/tracking/details' element={<TrackingDetails />} />
 
         <Route path='/admin/management' element={<Management />} />
-
+        
         <Route path='/admin/management/kendaraan' element={<Kendaraan />} />
         <Route path='/admin/management/kendaraan/add' element={<KendaraanAdd />} />
         <Route path='/admin/management/kendaraan/update' element={<KendaraanUpdate />} />
@@ -58,9 +61,12 @@ function App() {
         <Route path='/history/details' element={<HistoryDetails />} />
 
       </Routes>
+
       <Footer />
+
     </BrowserRouter>
   );
 }
 
 export default App;
+
