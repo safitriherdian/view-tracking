@@ -2,7 +2,10 @@ import './index.css';
 import React from 'react';
 import Navbar from './components/navbar/Navbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Login from './pages/Auth/Login';
+import Register from './pages/Auth/Register';
+
 import Dashboard from './admin/dashboard/Dashboard';
 import Tracking from './admin/tracking/Tracking';
 import TrackingDetails from './admin/tracking/TrackingDetails';
@@ -27,12 +30,16 @@ function App() {
     <BrowserRouter>
 
       <Routes>
+
         <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+
       </Routes>
 
       <Navbar />
 
       <Routes>
+
         {/* ADMIN */}
 
         <Route path='/admin' element={<Dashboard />} />
@@ -41,7 +48,7 @@ function App() {
         <Route path='/admin/tracking/details' element={<TrackingDetails />} />
 
         <Route path='/admin/management' element={<Management />} />
-        
+
         <Route path='/admin/management/kendaraan' element={<Kendaraan />} />
         <Route path='/admin/management/kendaraan/add' element={<KendaraanAdd />} />
         <Route path='/admin/management/kendaraan/update' element={<KendaraanUpdate />} />

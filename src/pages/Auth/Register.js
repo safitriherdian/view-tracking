@@ -2,7 +2,7 @@ import React from 'react';
 import './Auth.css';
 import { Link } from 'react-router-dom';
 
-function Login() {
+function Register() {
   return (
 
     <body class="bg-[#F26E70]">
@@ -19,32 +19,32 @@ function Login() {
             <div class='space-y-5 text-black'>
               <h1 class="lg:text-2xl xl:text-4xl xl:leading-snug font-extrabold">Enter your account and tracking your packages</h1>
               <p class="text-lg">You do not have an account?</p>
-
-              <Link to='/register'>
-                <button
-                  class="mt-4 inline-block flex-none px-4 py-3 border-2 rounded-lg font-medium border-black bg-[#F26E70] text-black">Create
-                  account here
-                </button>
-              </Link>
-
+              <button
+                class="inline-block flex-none px-4 py-3 border-2 rounded-lg font-medium border-black bg-[#F26E70] text-black">Create
+                account here</button>
             </div>
             <p class="font-medium text-black">© 2022 KOSME. All Rights Reserved, <br />PT Kosmetika Global Indonesia</p>
           </div>
 
 
           <div class="flex flex-1 flex-col items-center justify-center px-10 relative">
-
-            <div class="flex lg:hidden w-full justify-end py-8">
-                <img class="h-10" src="/images/kosme-white.png" alt="" />
+            <div class="flex lg:hidden justify-between items-center w-full py-4">
+              <div class="flex items-center justify-start space-x-3">
+                <span class="bg-black rounded-full w-6 h-6"></span>
+                <a class="font-medium text-lg">Brand</a>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span>Not a member? </span>
+                <a class="underline font-medium text-[#070eff]">
+                  Sign up now
+                </a>
+              </div>
             </div>
 
-            <div class="flex flex-1 flex-col justify-center space-y-5 max-w-md">
-
-              <img class="lg:hidden" src="/images/logo-white.png" alt="" />
-
+            <div class="flex flex-1 flex-col  justify-center space-y-5 max-w-md">
               <div class="flex flex-col space-y-2 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold">Sign in to your account!</h2>
-                <p class="text-md md:text-xl">Please input your email and password</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Sign in to your account!</h2>
+                <p class="text-md md:text-xl text-white">Please input your email and password</p>
               </div>
               <div class="flex flex-col max-w-md space-y-5">
                 <input type="text" placeholder="Email"
@@ -56,19 +56,6 @@ function Login() {
                   <button class="flex w-full justify-center flex-none px-3 py-2 md:px-4 md:py-3 border-2 rounded-lg font-medium border-black bg-black text-white">LOGIN</button>
                 </Link>
 
-                <br />
-
-                <div class="lg:hidden flex items-center space-x-2">
-                  <span>Not a member? </span>
-
-                  <Link to='/register'>
-                    <a class="underline font-medium text-white">
-                      Sign up now
-                    </a>
-                  </Link>
-
-                </div>
-
               </div>
             </div>
           </div>
@@ -78,4 +65,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Register
