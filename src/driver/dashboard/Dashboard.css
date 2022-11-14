@@ -1,0 +1,18 @@
+.menuIcons {
+    align-self: center;
+    margin-left: 15px;
+    font-weight: 900;
+}
+
+.dropdown-input span {
+    margin-left: auto;
+}
+
+.dropdown-input p {
+    align-self: center;
+}
+
+
+@media screen and (max-width: 960px) {
+
+}

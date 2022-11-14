@@ -1,0 +1,129 @@
+.status-yes {
+    background: #387652;
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 3px 8px;
+}
+
+.status-no {
+    background: #D39800;
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 3px 8px;
+}
+
+.right-btn {
+    margin-left: auto;
+}
+
+.right-btn-back {
+    margin-left: auto;
+}
+
+.card-info {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.card-info tr {
+    vertical-align: top;
+    line-height: 2rem;
+}
+
+.card-info .tbl-info {
+    text-align: center;
+}
+
+.card-info .tbl-info tr {
+    text-align: center;
+    border-width: 1px;
+}
+
+.card-info .tbl-info td {
+    border-width: 1px;
+}
+
+.card-info .tbl-info th {
+    border-width: 1px;
+}
+
+.search {
+    position: relative;
+    border-radius: 0.375rem;
+    --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.title-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 960px) {
+    .card-info .tbl-info {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+    .card-tracking {
+        margin-top: 0;
+    }
+
+    .direction {
+        flex-direction: column;
+    }
+
+    .right-btn-back {
+        display: none;
+    }
+
+    .right-btn {
+        margin-left: 0 !important;
+    }
+
+    .search {
+        height: 3rem;
+        margin-top: 2rem;
+    }
+
+    .mt-12 {
+        margin-top: 1.5rem;
+    }
+
+    .img-card {
+        display: none;
+    }
+
+    .card-info {
+        margin-top: 1.5rem;
+    }
+
+    .content-details {
+        grid: none;
+    }
+
+    .title-page {
+        margin-bottom: 0;
+    }
+
+    .auto-layout tr {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    .auto-layout .w-10 {
+        display: none;
+    }
+
+    .content-details.mt-24 {
+        margin-top: 0;
+    }
+
+}
