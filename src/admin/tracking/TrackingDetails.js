@@ -77,8 +77,9 @@ function TrackingDetails() {
                                         <th>Point Awal</th>
                                         <th>Point Tujuan</th>
                                         <th>SJP</th>
+                                        <th>Start Time</th>
+                                        <th>Finish</th>
                                         <th>Status</th>
-                                        <th>Date</th>
                                         <th>Penerima</th>
                                     </tr>
                                 </thead>
@@ -95,12 +96,15 @@ function TrackingDetails() {
                                             338/SJ.KGI/22/X/SBY/MSG
                                         </td>
                                         <td>
-                                            <span class="status-yes">Sudah Diterima</span>
+                                            <p class="text-gray-900 whitespace-no-wrap">August 8th 2022</p><p class="text-gray-600 whitespace-no-wrap">7:28:09 AM</p>
                                         </td>
                                         <td>
-                                            <p class="text-gray-900 whitespace-no-wrap">August 9th 2022</p><p class="text-gray-600 whitespace-no-wrap">9:28:14 AM</p>
+                                            <p class="text-gray-900 whitespace-no-wrap">August 8th 2022</p><p class="text-gray-600 whitespace-no-wrap">10:55:35 AM</p>
                                         </td>
-                                        <td>-</td>
+                                        <td>
+                                            <span class="status-yes">Sudah Diterima</span>
+                                        </td>
+                                        <td>Budi</td>
 
                                     </tr>
                                     <tr>
@@ -113,9 +117,12 @@ function TrackingDetails() {
                                             335/SJ.KGI/22/X/SBY/MSG 
                                         </td>
                                         <td>
-                                            <span class="status-no">Dalam Pengiriman</span>
+                                            <p class="text-gray-900 whitespace-no-wrap">August 8th 2022</p><p class="text-gray-600 whitespace-no-wrap">7:28:09 AM</p>
                                         </td>
                                         <td>-</td>
+                                        <td>
+                                            <span class="status-no">Dalam Pengiriman</span>
+                                        </td>
                                         <td>-</td>
 
                                     </tr>

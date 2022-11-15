@@ -16,7 +16,7 @@ function alert_warning() {
     })
 }
 
-function toast_success() {
+function toast_success_create() {
     const Toast = Swal.mixin({
         toast: true,
         position: 'top-end',
@@ -35,9 +35,31 @@ function toast_success() {
     })
 }
 
+function toast_success_finish() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    })
+
+    Toast.fire({
+        icon: 'success',
+        title: 'Delivery successfully sent'
+    })
+}
+
 
 function Dashboard() {
+
     const [openTab, setOpenTab] = React.useState(1);
+    const [showModal, setShowModal] = React.useState(false);
+
     return (
         <div className="container">
             <div className="content">
@@ -120,7 +142,7 @@ function Dashboard() {
                                 <li className="-mb-px last:mr-0 flex-auto text-center">
                                     <a
                                         className={
-                                            "font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                                            "font-bold uppercase px-5 py-3 shadow-lg rounded-lg block leading-normal " +
                                             (openTab === 1
                                                 ? "text-pink-1 bg-white"
                                                 : "text-white bg-pink-2")
@@ -146,7 +168,7 @@ function Dashboard() {
                                 <li className="-mb-px last:mr-0 flex-auto text-center">
                                     <a
                                         className={
-                                            "font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                                            "font-bold uppercase px-5 py-3 shadow-lg rounded-lg block leading-normal " +
                                             (openTab === 2
                                                 ? "text-pink-1 bg-white"
                                                 : "text-white bg-pink-2")
@@ -165,6 +187,15 @@ function Dashboard() {
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
                                         </div>
+                                    </a>
+                                </li>
+
+                                <li className="-mb-px last:mr-0 flex-none text-center bg-white hover:bg-pink-2 rounded-lg">
+                                    <a className="px-5 py-3 shadow-lg block leading-normal text-pink-1 hover:text-white ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                        </svg>
+
                                     </a>
                                 </li>
 
@@ -284,16 +315,77 @@ function Dashboard() {
                             </div>
                         </div>
 
-                        <Link to='/history'>
-                            <button onClick={toast_success} type="submit"
-                                class="justify-center flex bg-blue-1 hover:bg-blue-2 text-white font-bold py-3 w-full rounded-lg tracking-wider shadow-sm">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                START
-                            </button>
-                        </Link>
+                        <button onClick={toast_success_create} type="submit"
+                            class="justify-center flex bg-blue-1 hover:bg-blue-2 text-white font-bold py-3 w-full rounded-lg tracking-wider shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            START
+                        </button>
 
+                        <br />
+
+                        <button
+                            className="justify-center flex bg-green-1 hover:bg-green-2 text-white font-bold py-3 w-full rounded-lg tracking-wider shadow-sm ease-linear transition-all duration-150"
+                            type="button"
+                            onClick={() => setShowModal(true)}
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                            </svg>
+                            FINISH
+                        </button>
+
+                        {showModal ? (
+                            <>
+                                <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                                    <div className="relative max-w-prose">
+                                        <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                            <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                                                <h3 className="text-xl font-semibold mr-12">
+                                                    Confirmation of Delivery Receipt
+                                                </h3>
+
+                                                <button
+                                                    className="ml-auto bg-transparent border-0 text-gray-700 float-right text-xl px-2"
+                                                    onClick={() => setShowModal(false)}
+                                                >
+                                                    ×
+                                                </button>
+
+                                            </div>
+                                            <div className="relative p-6 flex-auto">
+                                                <div class="flex">
+                                                    <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-gray-500 w-4 h-4">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                                                        </svg>
+                                                    </div>
+                                                    <input type="text" id="password" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-pink-1" placeholder="Nama Penerima" />
+                                                </div>
+                                            </div>
+                                            <div className="flex gap-2 items-center justify-end p-6 border-t border-solid border-slate-200">
+                                                <button
+                                                    className="bg-grey-4 text-white hover:bg-grey-3 font-bold uppercase text-sm px-6 py-3 rounded-md shadow hover:shadow-lg outline-none ease-linear transition-all duration-150"
+                                                    type="button"
+                                                    onClick={() => setShowModal(false)}
+                                                >
+                                                    CANCEL
+                                                </button>
+                                                <button
+                                                    className="bg-pink-1 text-white hover:bg-pink-2 font-bold uppercase text-sm px-6 py-3 rounded-md shadow hover:shadow-lg outline-none ease-linear transition-all duration-150"
+                                                    type="button"
+                                                    onClick={() => setShowModal(false)}
+                                                >
+                                                    SAVE
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                            </>
+                        ) : null}
 
                     </div>
                 </div>

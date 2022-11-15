@@ -46,6 +46,7 @@ function History() {
                                         <th>Armada</th>
                                         <th>Kendaraan</th>
                                         <th>Plat</th>
+                                        <th>Start Time</th>
                                         <th>Status</th>
                                         <th>Detail</th>
                                     </tr>
@@ -56,6 +57,9 @@ function History() {
                                         <td>K-LOG. 001</td>
                                         <td>NMR</td>
                                         <td>N 8755 EI</td>
+                                        <td>
+                                            <p class="text-gray-900 whitespace-no-wrap">August 8th 2022</p><p class="text-gray-600 whitespace-no-wrap">7:28:09 AM</p>
+                                        </td>
                                         <td>
                                             <span class="relative inline-block px-3 py-1 leading-tight text-center">
                                                 <span aria-hidden="true" class="bg-yellow-2 opacity-25 absolute inset-0 rounded-full"></span>
@@ -79,6 +83,9 @@ function History() {
                                         <td>Wingbox Box Besar</td>
                                         <td>N 9357 EK</td>
                                         <td>
+                                            <p class="text-gray-900 whitespace-no-wrap">August 1th 2022</p><p class="text-gray-600 whitespace-no-wrap">12:28:59 AM</p>
+                                        </td>
+                                        <td>
                                             <span class="relative inline-block px-3 py-1 leading-tight text-center">
                                                 <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-full"></span>
                                                 <span class="relative text-xs text-green">Sudah Diterima</span>
@@ -100,6 +107,9 @@ function History() {
                                         <td>K-LOG. 005</td>
                                         <td>Wingbox Box Ceper</td>
                                         <td>N 9163 CE</td>
+                                        <td>
+                                            <p class="text-gray-900 whitespace-no-wrap">July 22th 2022</p><p class="text-gray-600 whitespace-no-wrap">7:28:09 AM</p>
+                                        </td>
                                         <td>
                                             <span class="relative inline-block px-3 py-1 leading-tight text-center">
                                                 <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-full"></span>
