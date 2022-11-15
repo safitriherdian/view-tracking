@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-html, body{
+html,
+body {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -8,10 +9,46 @@ html, body{
   -moz-column-break-inside: avoid;
   break-inside: avoid;
 }
+
 body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   min-height: 100vh;
   line-height: 1.5;
+}
+
+.login_img_section {
+  background: linear-gradient(rgba(2, 2, 2, .7), rgba(0, 0, 0, .7)), url(https://images.unsplash.com/photo-1650825556125-060e52d40bd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center;
+}
+
+.center {
+  text-align: -webkit-center;
+}
+
+@media screen and (max-width: 960px) {
+  section {
+    padding: 20px;
+  }
+
+  .img-register {
+    width: 75%;
+    margin-bottom: 20px;
+  }
+
+  .h-screen .bg-white {
+    padding: 20px;
+  }
+
+  .card-register {
+    width: -webkit-fill-available;
+  }
+
+  .card-register form {
+    gap: 1rem
+  }
+
+  .card-register p {
+    margin-bottom: 20px;
+  }
 }

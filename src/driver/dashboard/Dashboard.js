@@ -115,11 +115,9 @@ function Dashboard() {
                     <div className="col-span-1">
                         <div className="bg-pink-1 py-4 px-10 rounded-t-lg">
 
-                            <ul
-                                className="flex list-none flex-wrap flex-row"
-                                role="tablist"
-                            >
-                                <li className="-mb-px mr-4 last:mr-0 flex-auto text-center">
+                            <ul className="flex list-none flex-wrap flex-row gap-3" role="tablist">
+
+                                <li className="-mb-px last:mr-0 flex-auto text-center">
                                     <a
                                         className={
                                             "font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
@@ -136,10 +134,16 @@ function Dashboard() {
                                         href="#link1"
                                         role="tablist"
                                     >
-                                        Rute 1
+                                        <div className="flex">
+                                            Rute 1
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="end-position w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                        </div>
                                     </a>
                                 </li>
-                                <li className="-mb-px mr-4 last:mr-0 flex-auto text-center">
+
+                                <li className="-mb-px last:mr-0 flex-auto text-center">
                                     <a
                                         className={
                                             "font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
@@ -155,9 +159,15 @@ function Dashboard() {
                                         href="#link2"
                                         role="tablist"
                                     >
-                                        Rute 2
+                                        <div className="flex">
+                                            Rute 2
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="end-position w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                        </div>
                                     </a>
                                 </li>
+
                             </ul>
                         </div>
 

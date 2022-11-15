@@ -57,7 +57,10 @@ function History() {
                                         <td>NMR</td>
                                         <td>N 8755 EI</td>
                                         <td>
-                                            <span class="status-no">Dalam Pengiriman</span>
+                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                                <span aria-hidden="true" class="bg-yellow-2 opacity-25 absolute inset-0 rounded-full"></span>
+                                                <span class="relative text-xs text-yellow">Dalam Perjalanan</span>
+                                            </span>
                                         </td>
                                         <td>
                                             <Link to='details'>
@@ -76,7 +79,10 @@ function History() {
                                         <td>Wingbox Box Besar</td>
                                         <td>N 9357 EK</td>
                                         <td>
-                                            <span class="status-yes">Sudah Diterima</span>
+                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                                <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-full"></span>
+                                                <span class="relative text-xs text-green">Sudah Diterima</span>
+                                            </span>
                                         </td>
                                         <td>
                                             <Link to='details'>
@@ -95,7 +101,10 @@ function History() {
                                         <td>Wingbox Box Ceper</td>
                                         <td>N 9163 CE</td>
                                         <td>
-                                            <span class="status-yes">Sudah Diterima</span>
+                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                                <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-full"></span>
+                                                <span class="relative text-xs text-green">Sudah Diterima</span>
+                                            </span>
                                         </td>
                                         <td>
                                             <Link to='details'>

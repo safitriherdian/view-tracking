@@ -53,7 +53,7 @@ function Dashboard() {
 
                 <div className='grid grid-cols-7 gap-6 grid-dashboard mt mt-6'>
                     <div className='col-span-3 card'>
-                        <p className="text-xl font-bold">Tracking Performance</p>
+                        <p className="text-xl font-bold">Delivery Performance</p>
                         <img className="img-graph" src="/images/chart.png" alt="" />
                     </div>
                     <div className='col-span-2 card mt'>
