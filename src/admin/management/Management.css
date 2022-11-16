@@ -121,7 +121,7 @@
     }
 
     .mng-table {
-        display: none;
+        display: none !important;
     }
 
     .direction {
@@ -158,5 +158,10 @@
 
     .placeholder-text {
         padding: 0.25rem 0;
+    }
+
+    .action {
+        display: flex;
+        gap: 5px;
     }
 }

@@ -62,7 +62,7 @@ function Kendaraan() {
                                     <tr>
                                         <td>1</td>
                                         <td>Wingbox Tronton</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -80,7 +80,7 @@ function Kendaraan() {
                                     <tr>
                                         <td>2</td>
                                         <td>Wingbox Box Besar</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -98,7 +98,7 @@ function Kendaraan() {
                                     <tr>
                                         <td>3</td>
                                         <td>Wingbox Box Ceper</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -116,7 +116,7 @@ function Kendaraan() {
                                     <tr>
                                         <td>4</td>
                                         <td>NLR</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -134,7 +134,7 @@ function Kendaraan() {
                                     <tr>
                                         <td>5</td>
                                         <td>NMR</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">

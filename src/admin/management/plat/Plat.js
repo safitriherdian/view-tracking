@@ -65,7 +65,7 @@ function Plat() {
                                         <td>1</td>
                                         <td>N 9356 EK</td>
                                         <td>Wingbox Tronton</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -84,7 +84,7 @@ function Plat() {
                                         <td>2</td>
                                         <td>N 9357 EK</td>
                                         <td>Wingbox Tronton</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -103,7 +103,7 @@ function Plat() {
                                         <td>3</td>
                                         <td>N 8231 EH</td>
                                         <td>Wingbox Box Besar</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -122,7 +122,7 @@ function Plat() {
                                         <td>4</td>
                                         <td>N 9443 EJ</td>
                                         <td>Wingbox Box Besar</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -141,7 +141,7 @@ function Plat() {
                                         <td>5</td>
                                         <td>N 8141 EI</td>
                                         <td>Wingbox Box Ceper</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">

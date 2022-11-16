@@ -63,7 +63,7 @@ function Driver() {
                                     <tr>
                                         <td>1</td>
                                         <td>Agus Hariyanto</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -81,7 +81,7 @@ function Driver() {
                                     <tr>
                                         <td>2</td>
                                         <td>Nur Wahyudi</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -99,7 +99,7 @@ function Driver() {
                                     <tr>
                                         <td>3</td>
                                         <td>Iskandar</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -117,7 +117,7 @@ function Driver() {
                                     <tr>
                                         <td>4</td>
                                         <td>Itok Wahyudi</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">
@@ -135,7 +135,7 @@ function Driver() {
                                     <tr>
                                         <td>5</td>
                                         <td>Edi Widodo</td>
-                                        <td>
+                                        <td className='action'>
                                             <Link to='update'>
                                                 <button className='bg-yellow-2 hover:bg-yellow-1 p-1 flex-initial w-15 rounded'>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="fill-white w-5 h-5">

@@ -53,39 +53,39 @@ function Dashboard() {
 
                 <div className='grid grid-cols-7 gap-6 grid-dashboard mt mt-6'>
                     <div className='col-span-3 card'>
-                        <p className="text-xl font-bold">Delivery Performance</p>
+                        <p className="xl:text-xl sm:text-base font-bold">Delivery Performance</p>
                         <img className="w-full" src="/images/chart.png" alt="" />
                     </div>
                     <div className='col-span-2 card mt'>
-                        <p className="text-xl font-bold">Driver Performance</p>
+                        <p className="xl:text-xl sm:text-base font-bold">Driver Performance</p>
                         <img className="w-full mt-5" src="/images/chart-pie.png" alt="" />
                     </div>
-                    <div className='col-span-2'>
-                        <div className="bg-white p-10 rounded-xl drop-shadow flex flex-row items-center card-admin">
+                    <div className='col-span-2 hide'>
+                        <div className="bg-white xl:p-10 sm:p-5 rounded-xl drop-shadow flex flex-row items-center">
                             <img className="photo-profile bg-pink-1 rounded-lg" src="/images/photo.jpg" alt="" />
                             <div className="ml-5">
                                 <p className="text-sm">Welcome,</p>
-                                <p className="text-xl font-bold">Admin K|TRACK!</p>
+                                <p className="xl:text-xl sm:text-base font-bold">Admin K|TRACK!</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-2 gap-5 mt-6 grid-dashboard">
-                            <div className="bg-white p-10 rounded-xl drop-shadow">
+                            <div className="bg-white xl:p-10 sm:p-5 rounded-xl drop-shadow">
                                 <div className="bg-blue-3 p-2 h-10 w-10 rounded-full drop-shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="stroke-white w-6 h-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
                                     </svg>
                                 </div>
-                                <p className="text-3xl font-bold mt-14">02</p>
-                                <p className="mt-2 text-sm md:text-base">Total shipments in <b>a day</b></p>
+                                <p className="xl:text-3xl sm:text-xl font-bold mt-14">02</p>
+                                <p className="mt-2 xl:text-base sm:text-sm">Total delivery in <b>a day</b></p>
                             </div>
-                            <div className="bg-white p-10 rounded-xl drop-shadow mt">
+                            <div className="bg-white xl:p-10 sm:p-5 rounded-xl drop-shadow mt">
                                 <div className="bg-blue-3 p-2 h-10 w-10 rounded-full drop-shadow">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="stroke-white w-6 h-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
                                     </svg>
                                 </div>
-                                <p className="text-3xl font-bold mt-14">63</p>
-                                <p className="mt-2 text-sm md:text-base">Total shipments in <b>a month</b></p>
+                                <p className="xl:text-3xl sm:text-xl font-bold mt-14">63</p>
+                                <p className="mt-2 xl:text-base sm:text-sm">Total delivery in <b>a month</b></p>
                             </div>
                         </div>
 
@@ -98,4 +98,3 @@ function Dashboard() {
 }
 
 export default Dashboard
-

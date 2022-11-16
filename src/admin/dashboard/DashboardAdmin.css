@@ -8,9 +8,10 @@
         display: block;
     }
 
-    .card-admin {
+    .hide {
         display: none;
     }
+
     .mt {
         margin-top: 1rem;
     }
