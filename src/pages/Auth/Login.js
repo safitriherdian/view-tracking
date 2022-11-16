@@ -65,12 +65,14 @@ function Login() {
                   <input type="password" id="password" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-pink-1" placeholder="Password" />
                 </div>
 
-                <div class="flex justify-between items-center mb-6">
-                  <a href="#!" class="text-black hover:underline">Forgot password?</a>
-                </div>
+                <Link to='/forgot-password'>
+                  <div class="flex justify-between items-center mb-6">
+                    <a class="text-black hover:underline hover:font-semibold">Forgot password?</a>
+                  </div>
+                </Link>
 
                 <Link to='/'>
-                  <button class="flex w-full justify-center flex-none px-3 py-2 md:px-4 md:py-3 border-2 rounded-lg font-medium border-black bg-black text-white hover:bg-gray-900">LOGIN</button>
+                  <button class="flex w-full justify-center flex-none px-3 py-2 md:px-4 md:py-3 rounded-lg font-medium bg-black text-white hover:bg-gray-900">LOGIN</button>
                 </Link>
 
                 <br />

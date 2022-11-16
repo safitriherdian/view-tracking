@@ -11,9 +11,9 @@ function Register() {
 
           <div class="grow-0 shrink-1 md:shrink-0 basis-auto lg:w-6/12 md:w-6/12 md:mb-0 center">
             <img src="/images/img-register.png" class="lg:w-3/4 img-register" alt="" />
-            <p class="xl:mt-14 sm:mt-5 font-semibold"> Have an account?
+            <p class="xl:mt-14 sm:mt-5 font-medium"> Have an account?
               <Link to='/login'>
-                <a class="text-pink-1 hover:text-pink-2"> LOGIN </a>
+                <a class="text-pink-1 hover:text-pink-2 hover:font-extrabold"> LOGIN </a>
               </Link>
             </p>
           </div>
