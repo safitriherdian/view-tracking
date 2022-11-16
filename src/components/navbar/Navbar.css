@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   position: fixed;
   width: -webkit-fill-available;
@@ -43,7 +43,7 @@
   color: #475569;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .nav-links:hover {
@@ -74,18 +74,6 @@
 
 .menu-icon {
   display: none;
-}
-
-.btn-login {
-  font-size: 18px;
-  background: #F26E70;
-  color: #fff;
-  border-radius: 0.375rem;
-  padding: 0.5rem 1rem ;
-}
-
-.btn-login:hover {
-  background: #F8AFB0;
 }
 
 @media screen and (max-width: 960px) {
@@ -168,10 +156,6 @@
     background: #fff;
     color: #475569;
     transition: 250ms;
-  }
-
-  .btn-login {
-    display: none;
   }
 
   .active {

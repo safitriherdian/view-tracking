@@ -1,30 +1,18 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
-import Dropdown from './Dropdown';
+import { Menu, Transition } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
 
   return (
     <>
@@ -42,7 +30,7 @@ function Navbar() {
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
 
-        <li className='nav-item'>
+          <li className='nav-item'>
             <NavLink
               to='/'
               className='nav-links'
@@ -82,19 +70,50 @@ function Navbar() {
             </NavLink>
           </li>
 
-          <li
-            className='nav-item'
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
-            <NavLink
-              to='/admin/management'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Management <i className='ml-2 fas fa-caret-down' />
-            </NavLink>
-            {dropdown && <Dropdown />}
+          <li className='self-center'>
+            <Menu as="div" className="relative inline-block text-blue-1 text-left">
+              <div>
+                <Menu.Button className="inline-flex w-full justify-center px-4 py-2 rounded-md hover:bg-blue-5">
+                  Management
+                  <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+                </Menu.Button>
+              </div>
+
+              <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <div className="py-1">
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a href="/admin/management/driver" className={classNames(
+                        active ? 'font-bold' : 'text-gray-700',
+                        'block px-4 py-2 text-sm'
+                      )}>
+                        Driver
+                      </a>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a href="/admin/management/kendaraan" className={classNames(
+                        active ? 'font-bold' : 'text-gray-700',
+                        'block px-4 py-2 text-sm'
+                      )}>
+                        Kendaraan
+                      </a>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a href="/admin/management/plat" className={classNames(
+                        active ? 'font-bold' : 'text-gray-700',
+                        'block px-4 py-2 text-sm'
+                      )}>
+                        Plat Nomor
+                      </a>
+                    )}
+                  </Menu.Item>
+                </div>
+              </Menu.Items>
+            </Menu>
           </li>
 
           <li>
@@ -108,24 +127,66 @@ function Navbar() {
           </li>
         </ul>
 
-        <Link to='login'>
-          <button
-            className='flex btn-login'>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-3 w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
-            </svg>
+        <Menu as="div" className="relative inline-block text-left hide">
+          <div>
+            <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50">
+              Hi, Admin
+              <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+            </Menu.Button>
+          </div>
 
-            LOGIN
-          </button>
-        </Link>
-
-        {/* <button
-          className='flex btn-login'>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="mr-3 w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-          </svg>
-          LOGOUT
-        </button> */}
+          <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <div className="py-1">
+              <Menu.Item>
+                {({ active }) => (
+                  <a href="/login" className={classNames(
+                    active ? 'font-bold' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  )}>
+                    Login
+                  </a>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <a href="#" className={classNames(
+                    active ? 'font-bold' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  )}>
+                    Profile
+                  </a>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <a href="#" className={classNames(
+                    active ? 'font-bold' : 'text-gray-700',
+                    'block px-4 py-2 text-sm'
+                  )}>
+                    Setting
+                  </a>
+                )}
+              </Menu.Item>
+            </div>
+            <div className="py-1">
+              <Menu.Item>
+                {({ active }) => (
+                  <div className='flex justify-between items-center'>
+                    <a href="#" className={classNames(
+                      active ? 'font-bold' : 'text-gray-700',
+                      'block px-4 py-2 text-sm'
+                    )}>
+                      Logout
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-4 text-gray-700 hover:font-bold">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                    </svg>
+                  </div>
+                )}
+              </Menu.Item>
+            </div>
+          </Menu.Items>
+        </Menu>
 
       </nav>
     </>
