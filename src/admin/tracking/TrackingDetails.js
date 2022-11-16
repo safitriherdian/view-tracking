@@ -102,7 +102,10 @@ function TrackingDetails() {
                                             <p class="text-gray-900 whitespace-no-wrap">August 8th 2022</p><p class="text-gray-600 whitespace-no-wrap">10:55:35 AM</p>
                                         </td>
                                         <td>
-                                            <span class="status-yes">Sudah Diterima</span>
+                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                                <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-full"></span>
+                                                <span class="relative text-xs text-green">Sudah Diterima</span>
+                                            </span>
                                         </td>
                                         <td>Budi</td>
 
@@ -114,14 +117,17 @@ function TrackingDetails() {
                                         <td>
                                             336/SJ.KGI/22/X/SBY/MSG <br />
                                             337/SJ.KGI/22/X/SBY/MSG <br />
-                                            335/SJ.KGI/22/X/SBY/MSG 
+                                            335/SJ.KGI/22/X/SBY/MSG
                                         </td>
                                         <td>
                                             <p class="text-gray-900 whitespace-no-wrap">August 8th 2022</p><p class="text-gray-600 whitespace-no-wrap">7:28:09 AM</p>
                                         </td>
                                         <td>-</td>
                                         <td>
-                                            <span class="status-no">Dalam Pengiriman</span>
+                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                                <span aria-hidden="true" class="bg-yellow-2 opacity-25 absolute inset-0 rounded-full"></span>
+                                                <span class="relative text-xs text-yellow">Dalam Perjalanan</span>
+                                            </span>
                                         </td>
                                         <td>-</td>
 
