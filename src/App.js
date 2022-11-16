@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 
+import Selector from './pages/Profile/Selector';
+
 import Dashboard from './admin/dashboard/Dashboard';
 import Tracking from './admin/tracking/Tracking';
 import TrackingDetails from './admin/tracking/TrackingDetails';
@@ -33,6 +35,7 @@ function App() {
 
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/selector' element={<Selector />} />
 
       </Routes>
 
