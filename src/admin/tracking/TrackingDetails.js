@@ -20,7 +20,7 @@ function TrackingDetails() {
                     </div>
                     <p className="text-xl menuIcons">Details Tracking</p>
 
-                    <div className="right-btn-back">
+                    <div className="ml-auto show">
                         <button onClick={() => navigate(-1)} class="bg-blue-1 hover:bg-blue-3 text-white py-2 px-6 rounded-lg tracking-wider shadow-sm">
                             KEMBALI
                         </button>

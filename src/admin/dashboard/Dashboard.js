@@ -54,11 +54,11 @@ function Dashboard() {
                 <div className='grid grid-cols-7 gap-6 grid-dashboard mt mt-6'>
                     <div className='col-span-3 card'>
                         <p className="text-xl font-bold">Delivery Performance</p>
-                        <img className="img-graph" src="/images/chart.png" alt="" />
+                        <img className="w-full" src="/images/chart.png" alt="" />
                     </div>
                     <div className='col-span-2 card mt'>
                         <p className="text-xl font-bold">Driver Performance</p>
-                        <img className="img-graph mt-5" src="/images/chart-pie.png" alt="" />
+                        <img className="w-full mt-5" src="/images/chart-pie.png" alt="" />
                     </div>
                     <div className='col-span-2'>
                         <div className="bg-white p-10 rounded-xl drop-shadow flex flex-row items-center card-admin">

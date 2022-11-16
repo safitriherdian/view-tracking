@@ -39,7 +39,7 @@
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.right-span {
+.ml-auto {
     margin-left: auto;
 }
 
@@ -98,11 +98,10 @@
     line-height: 1.25;
 }
 
-
 @media screen and (max-width: 960px) {
-    .right-span {
+    .ml-auto {
         margin-left: auto;
-    }    
+    }
 
     .btn-back {
         display: none;

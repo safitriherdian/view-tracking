@@ -38,7 +38,7 @@ function Kendaraan() {
                         <p className="text-xl menuIcons">Management Kendaraan</p>
                     </div>
 
-                    <div className="right-span">
+                    <div className="ml-auto">
                         <Link to='add'>
                             <button class="btn-add">
                                 TAMBAH KENDARAAN

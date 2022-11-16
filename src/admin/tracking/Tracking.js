@@ -17,7 +17,7 @@ function Tracking() {
                         <p className="text-base md:text-xl menuIcons">Shipment Tracking</p>
                     </div>
 
-                    <div className="right-btn">
+                    <div className="ml-auto btn-right">
                         <div className="search">
                             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                                 <span>

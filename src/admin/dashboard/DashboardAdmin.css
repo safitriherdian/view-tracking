@@ -3,10 +3,6 @@
     width: 80px;
 }
 
-.img-graph {
-    width: 100%;
-}
-
 @media screen and (max-width: 960px) {
     .grid-dashboard {
         display: block;

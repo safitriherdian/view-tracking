@@ -52,7 +52,7 @@ function KendaraanAdd() {
                             </form>
                         </div> 
                         <div className='flex mt-10'>
-                            <div className="right-btn">
+                            <div className="ml-auto">
                             <button onClick={() => navigate(-1)} class="btn-back hover:bg-blue-3">
                                     KEMBALI
                                 </button>

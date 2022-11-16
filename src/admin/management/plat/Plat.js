@@ -39,7 +39,7 @@ function Plat() {
                         <p className="text-xl menuIcons">Management Plat Nomor</p>
                     </div>
 
-                    <div className="right-span">
+                    <div className="ml-auto">
                         <Link to='add'>
                             <button class="btn-add">
                                 TAMBAH PLAT NOMOR
