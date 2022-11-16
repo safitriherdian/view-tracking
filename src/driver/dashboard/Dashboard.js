@@ -80,7 +80,7 @@ function Dashboard() {
                             <p className="text-sm text-white">Fill out the form below and create new delivery</p>
                         </div>
 
-                        <div className="py-5 px-10 rounded-b-lg bg-white mb-4">
+                        <div className="py-8 px-10 rounded-b-lg bg-white mb-4">
                             <div>
                                 <p className="font-bold mb-2">Kendaraan</p>
                                 <div class="w-fullinline-block relative text-sm">
@@ -124,12 +124,6 @@ function Dashboard() {
                                         <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div className="flex justify-end">
-                                <button onClick={alert_warning} class="bg-pink-1 hover:bg-pink-2 text-white mt-4 font-bold py-2 px-6 rounded-lg tracking-widest drop-shadow">
-                                    SAVE
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -202,7 +196,7 @@ function Dashboard() {
                             </ul>
                         </div>
 
-                        <div className="py-5 px-10 rounded-md bg-white mb-4">
+                        <div className="py-8 px-10 rounded-md bg-white mb-4">
                             <div className="flex flex-wrap">
                                 <div className="w-full">
 
@@ -252,11 +246,6 @@ function Dashboard() {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div className="flex justify-end">
-                                                        <button onClick={alert_warning} class="bg-pink-1 hover:bg-pink-2 text-white mt-4 font-bold py-2 px-6 rounded-lg tracking-widest drop-shadow">
-                                                            SAVE
-                                                        </button>
-                                                    </div>
                                                 </div>
 
                                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
@@ -302,11 +291,19 @@ function Dashboard() {
                                                             </div>
                                                         </div>
                                                     </div>
+
                                                     <div className="flex justify-end">
-                                                        <button onClick={alert_warning} class="bg-pink-1 hover:bg-pink-2 text-white mt-4 font-bold py-2 px-6 rounded-lg tracking-widest drop-shadow">
-                                                            SAVE
+                                                        <button
+                                                            className="mt-6 px-5 justify-center flex bg-green-1 hover:bg-green-2 text-white font-bold py-3 w-auto rounded-lg tracking-wider shadow-sm ease-linear transition-all duration-150"
+                                                            type="button"
+                                                            onClick={() => setShowModal(true)}>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 w-6 h-6">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                                                            </svg>
+                                                            FINISH
                                                         </button>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -321,19 +318,6 @@ function Dashboard() {
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             START
-                        </button>
-
-                        <br />
-
-                        <button
-                            className="justify-center flex bg-green-1 hover:bg-green-2 text-white font-bold py-3 w-full rounded-lg tracking-wider shadow-sm ease-linear transition-all duration-150"
-                            type="button"
-                            onClick={() => setShowModal(true)}
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
-                            </svg>
-                            FINISH
                         </button>
 
                         {showModal ? (
