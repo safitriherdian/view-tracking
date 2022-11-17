@@ -24,7 +24,7 @@ import Driver from './admin/management/driver/Driver';
 import DriverAdd from './admin/management/driver/DriverAdd';
 import DriverUpdate from './admin/management/driver/DriverUpdate';
 
-import DashboardDriver from './driver/dashboard/Dashboard';
+import HomeDriver from './driver/home/Home';
 import HistoryDriver from './driver/history/History';
 import HistoryDetails from './driver/history/HistoryDetails';
 
@@ -68,7 +68,7 @@ function App() {
 
         {/* DRIVER */}
 
-        <Route path='/' element={<DashboardDriver />} />
+        <Route path='/' element={<HomeDriver />} />
         <Route path='/history' element={<HistoryDriver />} />
         <Route path='/history/details' element={<HistoryDetails />} />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import './Dashboard.css';
+import './Home.css';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2'
 
@@ -55,7 +55,7 @@ function toast_success_finish() {
 }
 
 
-function Dashboard() {
+function Home() {
 
     const [openTab, setOpenTab] = React.useState(1);
     const [showModal, setShowModal] = React.useState(false);
@@ -69,7 +69,7 @@ function Dashboard() {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                         </svg>
                     </div>
-                    <p className="text-xl menuIcons">Dashboard</p>
+                    <p className="text-xl menuIcons">Home</p>
                 </div >
 
                 <div className='grid grid-cols-2 gap-6 mt-6'>
@@ -184,6 +184,31 @@ function Dashboard() {
                                     </a>
                                 </li>
 
+                                <li className="-mb-px last:mr-0 flex-auto text-center">
+                                    <a
+                                        className={
+                                            "font-bold uppercase px-5 py-3 shadow-lg rounded-lg block leading-normal " +
+                                            (openTab === 3
+                                                ? "text-pink-1 bg-white"
+                                                : "text-white bg-pink-2")
+                                        }
+                                        onClick={e => {
+                                            e.preventDefault();
+                                            setOpenTab(3);
+                                        }}
+                                        data-toggle="tab"
+                                        href="#link2"
+                                        role="tablist"
+                                    >
+                                        <div className="flex">
+                                            Rute 3
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="end-position w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+
                                 <li className="-mb-px last:mr-0 flex-none text-center bg-white hover:bg-pink-2 rounded-lg">
                                     <a className="px-5 py-3 shadow-lg block leading-normal text-pink-1 hover:text-white ">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -291,6 +316,51 @@ function Dashboard() {
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+
+                                                <div className={openTab === 3 ? "block" : "hidden"} id="link2">
+                                                    <div>
+                                                        <p className="font-bold mb-2">Point Awal - 3</p>
+                                                        <div class="w-fullinline-block relative text-sm">
+                                                            <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                                                <option>Pilih point awal</option>
+                                                                <option>Option 1</option>
+                                                                <option>Option 2</option>
+                                                                <option>Option 3</option>
+                                                            </select>
+                                                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p className="font-bold mb-2 mt-5">Point Tujuan - 3</p>
+                                                        <div class="w-fullinline-block relative text-sm">
+                                                            <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                                                <option>Pilih point tujuan</option>
+                                                                <option>Option 1</option>
+                                                                <option>Option 2</option>
+                                                                <option>Option 3</option>
+                                                            </select>
+                                                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p className="font-bold mb-2 mt-5">Nomor SJP - 3</p>
+                                                        <div class="w-fullinline-block relative text-sm">
+                                                            <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                                                <option>Pilih nomor SJP</option>
+                                                                <option>Option 1</option>
+                                                                <option>Option 2</option>
+                                                                <option>Option 3</option>
+                                                            </select>
+                                                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
                                                     <div className="flex justify-end">
                                                         <button
@@ -305,6 +375,7 @@ function Dashboard() {
                                                     </div>
 
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -381,5 +452,5 @@ function Dashboard() {
     )
 }
 
-export default Dashboard
+export default Home
 
