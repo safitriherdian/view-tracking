@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
-import { Menu, Transition } from '@headlessui/react'
+import { Menu } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 function classNames(...classes) {
@@ -165,7 +165,7 @@ function Navbar() {
               <Menu.Item>
                 {({ active }) => (
                   <div className='flex justify-between items-center'>
-                    <a href="#" className={classNames(
+                    <a href="/login" className={classNames(
                       active ? 'font-bold' : 'text-gray-700',
                       'block px-4 py-2 text-sm'
                     )}>

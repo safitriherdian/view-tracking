@@ -1,6 +1,5 @@
 import React from "react";
 import './Home.css';
-import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2'
 
 function alert_warning() {
@@ -383,7 +382,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <button onClick={toast_success_create} type="submit"
+                        <button onClick={alert_warning} type="submit"
                             class="justify-center flex bg-blue-1 hover:bg-blue-2 text-white font-bold py-3 w-full rounded-lg tracking-wider shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -431,7 +430,7 @@ function Home() {
                                                     className="bg-pink-1 text-white hover:bg-pink-2 font-bold uppercase text-sm px-6 py-3 rounded-md shadow hover:shadow-lg outline-none ease-linear transition-all duration-150"
                                                     type="button"
                                                     onClick={() => setShowModal(false)}
-                                                >
+                                                > 
                                                     SAVE
                                                 </button>
                                             </div>
