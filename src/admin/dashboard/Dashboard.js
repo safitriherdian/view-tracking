@@ -1,40 +1,6 @@
 import React from "react";
 import './DashboardAdmin.css';
 import { Link } from 'react-router-dom';
-import Swal from 'sweetalert2'
-
-function alert_warning() {
-    const Swal = require('sweetalert2')
-
-    Swal.fire({
-        title: 'Ada data yang masih kosong',
-        text: 'Silahkan isi data kosong tersebut terlebih dahulu ',
-        icon: 'warning',
-        confirmButtonText: 'OK',
-        width: 600,
-        padding: '2em 1em'
-    })
-}
-
-function toast_success() {
-    const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 2000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-            toast.addEventListener('mouseenter', Swal.stopTimer)
-            toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-    })
-
-    Toast.fire({
-        icon: 'success',
-        title: 'Successfully added new package'
-    })
-}
-
 
 function Dashboard() {
     return (

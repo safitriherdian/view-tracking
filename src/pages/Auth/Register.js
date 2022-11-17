@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Register() {
   return (
 
-    <section class="h-screen bg-pink-1 xl:px-32 xl:py-28 lg:px-16 lg:py-28 md:p-5">
+    <section class="h-screen bg-pink-1 lg:px-16 lg:py-20 md:p-5">
       <div class="h-full text-gray-800 bg-white rounded-lg">
         <div class="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6 xl:p-6 lg:p-12">
 
@@ -77,7 +77,7 @@ function Register() {
                 </button>
               </Link>
 
-              <p class="xl:mt-14 sm:mt-5 font-medium self-center"> Have an account?
+              <p class="font-medium self-center"> Have an account?
                 <Link to='/login'>
                   <a class="text-pink-1 hover:text-pink-2 hover:font-extrabold"> LOGIN </a>
                 </Link>

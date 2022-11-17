@@ -18,7 +18,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
 
-        <Link exact to='/admin' className='navbar-logo' onClick={closeMobileMenu}>
+        <Link exact to='/login' className='navbar-logo' onClick={closeMobileMenu}>
           <div className='flex'>
             <img className="h-8 mr-3" src="/images/logo.png" alt="" />
             <h1 className='letter-spacing'>K|TRACK</h1>
