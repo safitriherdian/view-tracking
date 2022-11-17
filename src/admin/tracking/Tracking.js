@@ -70,9 +70,9 @@ function Tracking() {
                                         </td>
                                         <td>Alpan Imcoming</td>
                                         <td>
-                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                            <span class="relative inline-block px-3 py-1 leading-none text-center">
                                                 <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-full"></span>
-                                                <span class="relative text-xs text-green-1">Sudah Diterima</span>
+                                                <span class="relative text-xs text-green-1 font-medium">Sudah Diterima</span>
                                             </span>
                                         </td>
                                         <td>
@@ -100,9 +100,9 @@ function Tracking() {
                                         </td>
                                         <td>Achmad Hardadik</td>
                                         <td>
-                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                            <span class="relative inline-block px-3 py-1 leading-none text-center">
                                                 <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-full"></span>
-                                                <span class="relative text-xs text-green-1">Sudah Diterima</span>
+                                                <span class="relative text-xs text-green-1 font-medium">Sudah Diterima</span>
                                             </span>
                                         </td>
                                         <td>
@@ -130,9 +130,9 @@ function Tracking() {
                                         </td>
                                         <td>Alpan Imcoming</td>
                                         <td>
-                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                            <span class="relative inline-block px-3 py-1 leading-none text-center">
                                                 <span aria-hidden="true" class="bg-yellow-2 opacity-25 absolute inset-0 rounded-full"></span>
-                                                <span class="relative text-xs text-yellow-1">Dalam Perjalanan</span>
+                                                <span class="relative text-xs text-yellow-1 font-medium">Dalam Perjalanan</span>
                                             </span>
                                         </td>
                                         <td>
@@ -160,9 +160,9 @@ function Tracking() {
                                         </td>
                                         <td>Achmad Hardadik</td>
                                         <td>
-                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                            <span class="relative inline-block px-3 py-1 leading-none text-center">
                                                 <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-full"></span>
-                                                <span class="relative text-xs text-green-1">Sudah Diterima</span>
+                                                <span class="relative text-xs text-green-1 font-medium">Sudah Diterima</span>
                                             </span>
                                         </td>
                                         <td>

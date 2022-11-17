@@ -52,6 +52,7 @@
         font-size: 0.875rem;
         line-height: 1.25rem;
     }
+
     .card-tracking {
         margin-top: 0;
     }
@@ -115,6 +116,15 @@
 
     .rounded-full {
         border-radius: 0.5rem
+    }
+
+    .to-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .to-row p {
+        align-self: flex-start;
     }
 
 }

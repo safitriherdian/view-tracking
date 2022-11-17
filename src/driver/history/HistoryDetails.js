@@ -101,9 +101,9 @@ function HistoryDetails() {
                                             <p class="text-gray-900 whitespace-no-wrap">August 8th 2022</p><p class="text-gray-600 whitespace-no-wrap">10:55:35 AM</p>
                                         </td>
                                         <td>
-                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                            <span class="relative inline-block px-3 py-1 leading-none text-center">
                                                 <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-full"></span>
-                                                <span class="relative text-xs text-green">Sudah Diterima</span>
+                                                <span class="relative text-xs text-green-1 font-medium">Sudah Diterima</span>
                                             </span>
                                         </td>
                                         <td>Budi</td>
@@ -123,9 +123,9 @@ function HistoryDetails() {
                                         </td>
                                         <td>-</td>
                                         <td>
-                                            <span class="relative inline-block px-3 py-1 leading-tight text-center">
+                                            <span class="relative inline-block px-3 py-1 leading-none text-center">
                                                 <span aria-hidden="true" class="bg-yellow-2 opacity-25 absolute inset-0 rounded-full"></span>
-                                                <span class="relative text-xs text-yellow">Dalam Perjalanan</span>
+                                                <span class="relative text-xs text-yellow-1 font-medium">Dalam Perjalanan</span>
                                             </span>
                                         </td>
                                         <td>-</td>
