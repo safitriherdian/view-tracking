@@ -11,12 +11,12 @@ function ForgotPass() {
                     <img className="h-10" src="/images/logo-pink.png" alt="" />
                 </div>
 
-                <div class="bg-pink-4 w-full p-6 rounded-lg shadow md:mt-0 sm:max-w-md sm:p-8">
+                <div class="bg-pink-4 w-full p-6 rounded-lg shadow md:mt-0 sm:max-w-md sm:p-8 auth">
 
-                    <h2 class="mb-1 text-xl font-bold leading-tight tracking-tight text-black md:text-2xl">
+                    <h2 class="mb-1 text-xl font-bold leading-tight tracking-tight text-black md:text-2xl text-center">
                         Forgot Your Password?
                     </h2>
-                    <p className='text-black text-sm'>Please enter your email address and new password</p>
+                    <p className='text-black text-sm mb-8 text-center'>Please enter your email address and new password</p>
 
                     <form class="space-y-4 lg:mt-6 md:space-y-5" action="#">
                         <div>

@@ -33,62 +33,66 @@ function Login() {
 
           <div class="flex flex-1 flex-col items-center justify-center px-10 relative">
 
-            <div class="flex lg:hidden w-full justify-end py-8">
+            <div class="flex lg:hidden w-full justify-end pt-8">
               <img class="h-10" src="/images/kosme-white.png" alt="" />
             </div>
 
-            <div class="flex flex-1 flex-col justify-center space-y-5 max-w-md">
+            <div class="flex flex-1 flex-col justify-center gap-4 max-w-md">
 
-              <img class="lg:hidden" src="/images/logo-white.png" alt="" />
+              <img class="lg:hidden mb-6 w-3/4 self-center" src="/images/logo-white.png" alt="" />
 
-              <div class="flex flex-col space-y-2 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold">Sign in to your account!</h2>
-                <p class="text-md md:text-xl">Please input your email and password</p>
-              </div>
-              <div class="flex flex-col max-w-md gap-3">
+              <div className='bg-white p-10 rounded-lg space-y-5'>
 
-                <div class="flex">
-                  <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-gray-500 w-4 h-4">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                    </svg>
-                  </div>
-                  <input type="text" id="name" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-pink-1" placeholder="Email Address" />
+                <div class="flex flex-col text-center auth">
+                  <h2 class="text-2xl md:text-3xl sm:max-sm:text-xl font-bold">Sign in to your account!</h2>
+                  <p class="text-base md:text-lg ">Please input your email and password</p>
                 </div>
 
-                <div class="flex">
-                  <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-gray-500 w-4 h-4">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-                    </svg>
+                <div class="flex flex-col max-w-md gap-3">
+
+                  <div class="flex">
+                    <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-gray-500 w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
+                    </div>
+                    <input type="text" id="name" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-pink-1" placeholder="Email Address" />
                   </div>
-                  <input type="password" id="password" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-pink-1" placeholder="Password" />
-                </div>
 
-                <Link to='/forgot-password'>
-                  <div class="flex justify-between items-center mb-6">
-                    <a class="text-black hover:underline hover:font-semibold">Forgot password?</a>
+                  <div class="flex">
+                    <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-gray-500 w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                      </svg>
+                    </div>
+                    <input type="password" id="password" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-pink-1" placeholder="Password" />
                   </div>
-                </Link>
 
-                <Link to='/'>
-                  <button class="flex w-full justify-center flex-none px-3 py-2 md:px-4 md:py-3 rounded-lg font-medium bg-black text-white hover:bg-gray-900">LOGIN</button>
-                </Link>
-
-                <br />
-
-                <div class="lg:hidden flex items-center space-x-2">
-                  <span>Not a member? </span>
-
-                  <Link to='/register'>
-                    <a class="underline font-medium text-white">
-                      Sign up now
-                    </a>
+                  <Link to='/forgot-password'>
+                    <div class="flex justify-between items-center mb-6">
+                      <a class="text-black hover:underline hover:font-semibold">Forgot password?</a>
+                    </div>
                   </Link>
 
+                  <Link to='/'>
+                    <button class="flex w-full justify-center flex-none px-3 py-2 md:px-4 md:py-3 rounded-lg font-medium bg-black text-white hover:bg-gray-900">LOGIN</button>
+                  </Link>
+
+                  <div class="lg:hidden text-black flex items-center space-x-2">
+                    <span>Not a member? </span>
+
+                    <Link to='/register'>
+                      <a class="underline font-medium text-black">
+                        Sign up now
+                      </a>
+                    </Link>
+
+                  </div>
+
                 </div>
 
               </div>
+
             </div>
           </div>
         </div>

@@ -11,17 +11,12 @@ function Register() {
 
           <div class="grow-0 shrink-1 md:shrink-0 basis-auto lg:w-6/12 md:w-6/12 md:mb-0 center">
             <img src="/images/img-register.png" class="lg:w-3/4 img-register" alt="" />
-            <p class="xl:mt-14 sm:mt-5 font-medium"> Have an account?
-              <Link to='/login'>
-                <a class="text-pink-1 hover:text-pink-2 hover:font-extrabold"> LOGIN </a>
-              </Link>
-            </p>
           </div>
 
           <div class="card-register xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 md:mt-5">
 
-            <div class="text-center xl:mb-10 lg:mb-8">
-              <h1 class="lg:text-2xl xl:text-4xl xl:leading-snug font-extrabold">REGISTER</h1>
+            <div class="text-center xl:mb-10 lg:mb-8 auth">
+              <h2 class="lg:text-2xl xl:text-4xl xl:leading-snug font-extrabold">REGISTER</h2>
               <p>Enter your information to register</p>
             </div>
 
@@ -81,6 +76,12 @@ function Register() {
                   REGISTER
                 </button>
               </Link>
+
+              <p class="xl:mt-14 sm:mt-5 font-medium self-center"> Have an account?
+                <Link to='/login'>
+                  <a class="text-pink-1 hover:text-pink-2 hover:font-extrabold"> LOGIN </a>
+                </Link>
+              </p>
 
             </form>
           </div>
