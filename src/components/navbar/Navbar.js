@@ -70,7 +70,7 @@ function Navbar() {
             </NavLink>
           </li>
 
-          <li className='self-center'>
+          <li className='self-center nav-dropdown'>
             <Menu as="div" className="relative inline-block text-blue-1 text-left">
               <div>
                 <Menu.Button className="inline-flex w-full justify-center px-4 py-2 rounded-md hover:bg-blue-5">
@@ -118,11 +118,24 @@ function Navbar() {
 
           <li>
             <NavLink
+              to='/register'
+              className='nav-links-mobile'
+              onClick={closeMobileMenu}
+            >
+              Profile
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
               to='/login'
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >
-              LOGOUT
+              Logout
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-700 hover:font-bold">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+              </svg>
             </NavLink>
           </li>
         </ul>
@@ -136,17 +149,7 @@ function Navbar() {
           </div>
 
           <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-            <div className="py-1">
-              <Menu.Item>
-                {({ active }) => (
-                  <a href="/login" className={classNames(
-                    active ? 'font-bold' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}>
-                    Login
-                  </a>
-                )}
-              </Menu.Item>
+            <div className="py-1 px-2">
               <Menu.Item>
                 {({ active }) => (
                   <a href="#" className={classNames(
@@ -157,18 +160,8 @@ function Navbar() {
                   </a>
                 )}
               </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <a href="#" className={classNames(
-                    active ? 'font-bold' : 'text-gray-700',
-                    'block px-4 py-2 text-sm'
-                  )}>
-                    Setting
-                  </a>
-                )}
-              </Menu.Item>
             </div>
-            <div className="py-1">
+            <div className="py-1 px-2">
               <Menu.Item>
                 {({ active }) => (
                   <div className='flex justify-between items-center'>
