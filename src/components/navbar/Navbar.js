@@ -17,6 +17,7 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
+
         <Link exact to='/admin' className='navbar-logo' onClick={closeMobileMenu}>
           <div className='flex'>
             <img className="h-8 mr-3" src="/images/logo.png" alt="" />
@@ -28,7 +29,6 @@ function Navbar() {
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-
 
           <li className='nav-item'>
             <NavLink

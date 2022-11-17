@@ -6,7 +6,7 @@ import Login from './pages/Auth/Login';
 import Register from './pages/Auth/Register';
 import ForgotPass from './pages/Auth/ForgotPass';
 
-import Selector from './pages/Profile/Selector';
+import Test from './pages/Profile/Test';
 
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
@@ -37,7 +37,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/forgot-password' element={<ForgotPass />} />
-        <Route path='/selector' element={<Selector />} />
+        <Route path='/test' element={<Test />} />
 
       </Routes>
 

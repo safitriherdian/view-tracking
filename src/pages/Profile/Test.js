@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Selector() {
+function Test() {
     return (
 
         <body class="bg-pink-1">
@@ -10,4 +10,4 @@ function Selector() {
     )
 }
 
-export default Selector
+export default Test
