@@ -1,6 +1,7 @@
 import React from "react";
 import './Home.css';
 import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom';
 
 function alert_warning() {
     const Swal = require('sweetalert2')
@@ -71,9 +72,9 @@ function Home() {
                     <p className="text-xl menuIcons">Home</p>
                 </div >
 
-                <div className='grid grid-cols-2 gap-6 mt-6'>
+                <div className='grid grid-cols-3 gap-6 mt-6'>
 
-                    <div className="col-span-1">
+                    <div className="col-span-2">
                         <div className="bg-pink-1 py-4 px-10 rounded-t-lg">
                             <p className="text-lg text-white font-bold">Add New Delivery</p>
                             <p className="text-sm text-white">Fill out the form below and create new delivery</p>
@@ -125,9 +126,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="col-span-1">
                         <div className="bg-pink-1 py-4 px-10 rounded-t-lg">
 
                             <ul className="flex list-none flex-wrap flex-row gap-3" role="tablist">
@@ -207,6 +206,82 @@ function Home() {
                                         </div>
                                     </a>
                                 </li>
+
+                                <li className="-mb-px last:mr-0 flex-auto text-center">
+                                    <a
+                                        className={
+                                            "font-bold uppercase px-5 py-3 shadow-lg rounded-lg block leading-normal " +
+                                            (openTab === 4
+                                                ? "text-pink-1 bg-white"
+                                                : "text-white bg-pink-2")
+                                        }
+                                        onClick={e => {
+                                            e.preventDefault();
+                                            setOpenTab(4);
+                                        }}
+                                        data-toggle="tab"
+                                        href="#link2"
+                                        role="tablist"
+                                    >
+                                        <div className="flex">
+                                            Rute 4
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="end-position w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li className="-mb-px last:mr-0 flex-auto text-center">
+                                    <a
+                                        className={
+                                            "font-bold uppercase px-5 py-3 shadow-lg rounded-lg block leading-normal " +
+                                            (openTab === 5
+                                                ? "text-pink-1 bg-white"
+                                                : "text-white bg-pink-2")
+                                        }
+                                        onClick={e => {
+                                            e.preventDefault();
+                                            setOpenTab(5);
+                                        }}
+                                        data-toggle="tab"
+                                        href="#link2"
+                                        role="tablist"
+                                    >
+                                        <div className="flex">
+                                            Rute 5
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="end-position w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li className="-mb-px last:mr-0 flex-auto text-center">
+                                    <a
+                                        className={
+                                            "font-bold uppercase px-5 py-3 shadow-lg rounded-lg block leading-normal " +
+                                            (openTab === 6
+                                                ? "text-pink-1 bg-white"
+                                                : "text-white bg-pink-2")
+                                        }
+                                        onClick={e => {
+                                            e.preventDefault();
+                                            setOpenTab(6);
+                                        }}
+                                        data-toggle="tab"
+                                        href="#link2"
+                                        role="tablist"
+                                    >
+                                        <div className="flex">
+                                            Rute 6
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="end-position w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                
 
                                 <li className="-mb-px last:mr-0 flex-none text-center bg-white hover:bg-pink-2 rounded-lg">
                                     <a className="px-5 py-3 shadow-lg block leading-normal text-pink-1 hover:text-white ">
@@ -430,7 +505,7 @@ function Home() {
                                                     className="bg-pink-1 text-white hover:bg-pink-2 font-bold uppercase text-sm px-6 py-3 rounded-md shadow hover:shadow-lg outline-none ease-linear transition-all duration-150"
                                                     type="button"
                                                     onClick={() => setShowModal(false)}
-                                                > 
+                                                >
                                                     SAVE
                                                 </button>
                                             </div>
@@ -442,10 +517,149 @@ function Home() {
                         ) : null}
 
                     </div>
+
+                    <div className="col-span-1">
+                        <div className="flex justify-between">
+                            <h1 className="text-xl font-bold">History Delivery</h1>
+                            <p className="inline-block text-sm hover:underline hover:font-semibold">See More</p>
+                        </div>
+                        <div className='card mt-6'>
+                            <div className='flex flex-row justify-between'>
+                                <div className='flex gap-2'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                                    </svg>
+                                    <p className='text-gray-900 text-sm font-semibold self-center'>8 AGUSTUS 2022</p>
+                                </div>
+                                <div className='flex'>
+                                    <span class="relative inline-block px-3 py-1 leading-none text-center">
+                                        <span aria-hidden="true" class="bg-yellow-2 opacity-25 absolute inset-0 rounded-md"></span>
+                                        <span class="relative text-xs text-yellow-1 font-medium">Dalam Perjalanan</span>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <hr class="my-4 border-t border-grey-50" />
+                            <div className='flex justify-between gap-5'>
+                                <div>
+                                    <h2 className='text-xl font-extrabold'>K-LOG. 005</h2>
+                                    <p className='text-base mt-3'>Kendaraan :</p>
+                                    <div className='flex gap-2 items-center to-row'>
+                                        <p className='text-base font-bold'>Wingbox Box Ceper</p>
+                                        <p className='text-sm'>- N 9163 CE</p>
+                                    </div>
+                                </div>
+
+                                <div className='self-end'>
+                                    <Link to='details'>
+                                        <button type="submit"
+                                            class="justify-center flex bg-blue-1 hover:bg-blue-2 text-white px-2 py-1 w-full rounded-md shadow-sm text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 w-5 h-5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                            See Detail
+                                        </button>
+                                    </Link>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className='card mt-6'>
+                            <div className='flex flex-row justify-between'>
+                                <div className='flex gap-2'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                                    </svg>
+                                    <p className='text-gray-900 text-sm font-semibold self-center'>06 JULI 2022</p>
+                                </div>
+                                <div className='flex'>
+                                    <span class="relative inline-block px-3 py-1 leading-none text-center">
+                                        <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-md"></span>
+                                        <span class="relative text-xs text-green-1 font-medium">Sudah Diterima</span>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <hr class="my-4 border-t border-grey-50" />
+                            <div className='flex justify-between gap-5'>
+                                <div>
+                                    <h2 className='text-xl font-extrabold'>K-LOG. 001</h2>
+                                    <p className='text-base mt-3'>Kendaraan :</p>
+                                    <div className='flex gap-2 items-center to-row'>
+                                        <p className='text-base font-bold'>Wingbox Box Besar</p>
+                                        <p className='text-sm'>- N 9357 EK</p>
+                                    </div>
+                                </div>
+
+                                <div className='self-end'>
+                                    <Link to='details'>
+                                        <button type="submit"
+                                            class="justify-center flex bg-blue-1 hover:bg-blue-2 text-white px-2 py-1 w-full rounded-md shadow-sm text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 w-5 h-5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                            See Detail
+                                        </button>
+                                    </Link>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className='card mt-6'>
+                            <div className='flex flex-row justify-between'>
+                                <div className='flex gap-2'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                                    </svg>
+                                    <p className='text-gray-900 text-sm font-semibold self-center'>23 JUNI 2022</p>
+                                </div>
+                                <div className='flex'>
+                                    <span class="relative inline-block px-3 py-1 leading-none text-center">
+                                        <span aria-hidden="true" class="bg-green-2 opacity-25 absolute inset-0 rounded-md"></span>
+                                        <span class="relative text-xs text-green-1 font-medium">Sudah Diterima</span>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <hr class="my-4 border-t border-grey-50" />
+                            <div className='flex justify-between gap-5'>
+                                <div>
+                                    <h2 className='text-xl font-extrabold'>K-LOG. 002</h2>
+                                    <p className='text-base mt-3'>Kendaraan :</p>
+                                    <div className='flex gap-2 items-center to-row'>
+                                        <p className='text-base font-bold'>NMR</p>
+                                        <p className='text-sm'>- N 8755 EI</p>
+                                    </div>
+                                </div>
+
+                                <div className='self-end'>
+                                    <Link to='details'>
+                                        <button type="submit"
+                                            class="justify-center flex bg-blue-1 hover:bg-blue-2 text-white px-2 py-1 w-full rounded-md shadow-sm text-sm">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 w-5 h-5">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                            See Detail
+                                        </button>
+                                    </Link>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-
-
-
             </div>
         </div >
     )

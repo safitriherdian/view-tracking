@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       display: ['group-focus'],
       colors: {
-        'pink-1': '#F26E70',
+        'pink-1': '#F26B6D',
         'pink-2': '#FF9595',
         'pink-3': '#F8AFB0',
         'pink-4': '#FBE0E0',
