@@ -8,6 +8,9 @@ import ForgotPass from './pages/Auth/ForgotPass';
 
 import Test from './pages/Profile/Test';
 
+import Maintenance from './pages/Error/Maintenance';
+import NotFound from './pages/Error/NotFound';
+
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Dashboard from './admin/dashboard/Dashboard';
@@ -38,6 +41,9 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/forgot-password' element={<ForgotPass />} />
         <Route path='/test' element={<Test />} />
+
+        <Route path='/maintenance' element={<Maintenance />} />
+        <Route path='/not-found' element={<NotFound />} />
 
       </Routes>
 
