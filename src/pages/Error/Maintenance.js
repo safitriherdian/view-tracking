@@ -1,19 +1,31 @@
-import React from 'react';
+import React from "react";
+import "./Error.css";
 
 function NotFound() {
-    return (
-
-        <section class="h-screen bg-pink-1 lg:px-16 lg:py-20 md:p-5">
-            <div class="grid h-full text-gray-800 bg-white rounded-lg space-y-5 p-20">
-                <body-img className="">
-                    <h1 class="lg:text-2xl xl:text-4xl xl:leading-snug font-extrabold">The site is currently down<br />for maintenance</h1>
-                    <p className='pt-5'>We apologize for any inconveniences caused</p>
-                    <p>We're doing our best and we'll back soon</p>
-                </body-img>
+  return (
+    <div class="bg">
+      <div class="container-1">
+        <div class="container-2">
+          <div class="container-3">
+            <div class="card-error card-maintenance">
+              <div class="bg-img">
+                <div class="text-area">
+                  <h1 className="text-3xl">
+                    The site is currently down for maintenance
+                  </h1>{" "}
+                  <br />
+                  <p>
+                    We apologize for any inconveniences caused. We're doing our
+                    best and we'll back soon 🙏
+                  </p>
+                </div>
+              </div>
             </div>
-        </section >
-
-    )
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default NotFound
+export default NotFound;
